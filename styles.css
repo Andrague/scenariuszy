@@ -1,86 +1,101 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #0f172a;
-    color: #e5e7eb;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     margin: 0;
+    padding: 20px;
+    min-height: 100vh;
 }
 
 header {
-    background: #020617;
-    padding: 20px;
     text-align: center;
-    border-bottom: 2px solid #1e293b;
+    color: white;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
 }
 
 #app {
     max-width: 900px;
-    margin: 30px auto;
-    padding: 20px;
+    margin: 0 auto;
 }
 
 .card {
-    background: #020617;
-    border: 1px solid #1e293b;
-    border-radius: 12px;
-    padding: 25px;
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    margin-bottom: 20px;
 }
 
 .card h2 {
+    color: #667eea;
     margin-top: 0;
-    color: #38bdf8;
+    font-size: 1.8em;
+}
+
+.card p {
+    line-height: 1.6;
+    color: #333;
 }
 
 .options {
-    display: grid;
-    gap: 18px;
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
 .option {
-    border: 1px solid #334155;
-    border-radius: 10px;
-    padding: 18px;
+    background: #f8f9fa;
+    border-left: 4px solid #667eea;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
     cursor: pointer;
-    background: #020617;
-    transition: background 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .option:hover {
-    background: #1e293b;
+    background: #e9ecef;
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .option-title {
     font-weight: bold;
-    color: #22c55e;
+    color: #667eea;
+    margin-bottom: 8px;
+    font-size: 1.1em;
 }
 
 .option-desc {
-    font-size: 14px;
-    margin-top: 6px;
+    color: #555;
+    margin-bottom: 5px;
 }
 
 .option-impact {
-    font-size: 13px;
-    margin-top: 8px;
-    color: #fbbf24;
+    color: #888;
     font-style: italic;
+    font-size: 0.9em;
 }
 
 .reset {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
-button {
-    background: #ef4444;
-    border: none;
+.reset button {
+    background: #667eea;
     color: white;
-    padding: 12px 22px;
-    border-radius: 8px;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
     cursor: pointer;
-    transition: background 0.3s ease;
+    font-size: 1em;
+    transition: all 0.3s ease;
 }
 
-button:hover {
-    background: #dc2626;
+.reset button:hover {
+    background: #764ba2;
+    transform: scale(1.05);
 }
