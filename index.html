@@ -163,22 +163,22 @@ Gra symulacyjna i system rankingowy okazały się strzałem w dziesiątkę. Zaan
         {
             title: "Wprowadzenie \"Punktów Jakości\" od recenzentów",
             desc: "Rozwiązanie jest poddawane ocenie (peer review) przez seniora. Punkty są przyznawane nie za szybkość, ale za elegancję i długoterminową wartość rozwiązania.",
-            next: "END_GAMIFICATION_FIX"
+            next: "END_QUALITY_POINTS"
         },
         {
             title: "Stworzenie \"Odznak za Trudne Wyzwania\"",
             desc: "Wprowadzenie prestiżowych odznak, które można zdobyć tylko za rozwiązanie problemów z listy \"najtrudniejszych\". Przenosi to fokus z ilości na jakość.",
-            next: "END_GAMIFICATION_FIX"
+            next: "END_ACHIEVEMENTS"
         },
         {
             title: "Wprowadzenie \"Mnożnika za Kreatywność\"",
             desc: "Pracownik może zgłosić swoje rozwiązanie jako \"nowatorskie\". Jeśli komisja uzna je za wartościowe, pracownik otrzymuje zwielokrotnioną liczbę punktów.",
-            next: "END_GAMIFICATION_FIX"
+            next: "END_CREATIVITY_MULTIPLIER"
         },
         {
             title: "Zastąpienie rywalizacji indywidualnej zespołową",
             desc: "Firma wprowadza rankingi zespołowe. Zespół zdobywa punkty tylko wtedy, gdy wszyscy jego członkowie osiągną pewien próg. Promuje to współpracę.",
-            next: "END_GAMIFICATION_FIX"
+            next: "END_TEAM_SUCCESS"
         }
     ]
 },
@@ -191,22 +191,22 @@ Powołanie Kuratorów Wiedzy przyniosło porządek. Baza wiedzy jest teraz dobrz
         {
             title: "Wprowadzenie modelu \"Wiki z Recenzją\"",
             desc: "Każdy może edytować treści, ale zmiany są flagowane jako \"niezweryfikowane\". Kuratorzy nie są już \"bramkarzami\", ale \"recenzentami\", którzy patrolują ostatnie zmiany.",
-            next: "END_CURATOR_FIX"
+            next: "END_WIKI_MODEL"
         },
         {
             title: "Stworzenie \"Poziomów Zaufania\" dla autorów",
             desc: "Pracownicy, którzy regularnie tworzą dobre treści, zdobywają wyższy \"poziom zaufania\", a ich zmiany są publikowane natychmiast, bez recenzji.",
-            next: "END_CURATOR_FIX"
+            next: "END_TRUST_LEVELS"
         },
         {
             title: "Wprowadzenie \"Gałęzi Wiedzy\" (Knowledge Branching)",
             desc: "Pracownik tworzy \"gałąź\" w bazie wiedzy. Może w niej swobodnie pracować, a gdy uzna, że jest gotowa, zgłasza ją do \"scalenia\" z główną bazą, co jest momentem recenzji.",
-            next: "END_CURATOR_FIX"
+            next: "END_BRANCHING_MODEL"
         },
         {
             title: "Ograniczenie roli Kuratorów do \"Meta-Wiedzy\"",
             desc: "Kuratorzy nie zajmują się już treścią, ale \"wiedzą o wiedzy\": strukturą bazy, systemem tagowania i tworzeniem powiązań między artykułami.",
-            next: "END_CURATOR_FIX"
+            next: "END_META_KNOWLEDGE"
         }
     ]
 },
@@ -220,22 +220,22 @@ System AI działa świetnie. Pracownicy zadają pytania w naturalnym języku i o
         {
             title: "Wprowadzenie obowiązkowego \"Śladu źródeł\"",
             desc: "Modyfikacja systemu AI tak, aby każda odpowiedź była obligatoryjnie opatrzona listą konkretnych dokumentów i fragmentów, na których się oparła.",
-            next: "END_AI_FIX"
+            next: "END_AI_CITATIONS"
         },
         {
             title: "System \"Confidence Score\" i weryfikacji",
             desc: "AI przypisuje każdej odpowiedzi poziom pewności (np. 0-100%). Odpowiedzi poniżej pewnego progu wymagają obowiązkowej weryfikacji przez eksperta.",
-            next: "END_AI_FIX"
+            next: "END_AI_CONFIDENCE"
         },
         {
             title: "Program \"Łowców Błędów AI\"",
             desc: "Stworzenie systemu nagród dla pracowników, którzy identyfikują i zgłaszają błędne odpowiedzi AI. Wykryte błędy są wykorzystywane do treningu modelu.",
-            next: "END_AI_FIX"
+            next: "END_AI_BOUNTY"
         },
         {
             title: "Dual-Mode: \"AI + Human\"",
             desc: "Dla kluczowych decyzji zarówno system AI, jak i doświadczony pracownik muszą niezależnie odpowiedzieć na pytanie. Jeśli odpowiedzi się różnią, uruchamia się proces analizy.",
-            next: "END_AI_FIX"
+            next: "END_AI_DUAL_MODE"
         }
     ]
 },
@@ -1391,6 +1391,134 @@ END_RENAISSANCE_MODEL: {
 Są w stanie zarówno utrzymać stare systemy, jak i tworzyć nowe. To niezwykle odporna i elastyczna organizacja. Koszt utrzymania i rozwoju tak wszechstronnych talentów jest jednak bardzo wysoki, a firma musi konkurować o nich na globalnym rynku.
 <br>
 <b>Wnioski:</b> Dążenie do stworzenia zespołu "jednostek idealnych" jest ambitną strategią, która może dać ogromną przewagę, ale jest bardzo kosztowna i trudna w skalowaniu.
+    `,
+    options: []
+},
+END_QUALITY_POINTS: {
+    title: "Zakończenie: Kultura Rzemiosła",
+    description: `
+<b>Firma z sukcesem przesunęła fokus z ilości na jakość.</b>
+Dzięki systemowi recenzji, pracownicy przestali "hakować system" i zaczęli dbać o elegancję i solidność swoich rozwiązań. Baza wiedzy rośnie wolniej, ale jej zawartość jest niezwykle wartościowa. Firma zyskała reputację "rzemieślników oprogramowania".
+<br>
+<b>Wnioski:</b> Wprowadzenie ludzkiego elementu oceny (peer review) do zautomatyzowanego systemu jest skutecznym sposobem na promowanie jakości i głębszego myślenia.
+    `,
+    options: []
+},
+END_ACHIEVEMENTS: {
+    title: "Zakończenie: Organizacja Łowców Wyzwań",
+    description: `
+<b>Firma nauczyła się koncentrować na tym, co naprawdę ważne.</b>
+
+Zamiast rozwiązywać setki małych, nieistotnych problemów, pracownicy polują na "grubego zwierza" – najtrudniejsze wyzwania, których rozwiązanie przynosi największą wartość i prestiż. Firma stała się niezwykle skuteczna w rozwiązywaniu kluczowych, strategicznych problemów.
+<br>
+<b>Wnioski:</b> Prestiż i uznanie są często silniejszym motywatorem niż punkty. Skupienie uwagi organizacji na najtrudniejszych problemach przynosi nieproporcjonalnie duże korzyści.
+    `,
+    options: []
+},
+END_CREATIVITY_MULTIPLIER: {
+    title: "Zakończenie: Kuźnia Innowacji",
+    description: `
+<b>Firma stworzyła system, który aktywnie nagradza wychodzenie poza utarte schematy.</b>
+
+Pracownicy nie boją się kwestionować istniejącej bazy wiedzy i proponować radykalnie nowych rozwiązań, wiedząc, że mogą zostać za to sowicie wynagrodzeni. Baza wiedzy nie jest już tylko archiwum, ale żywym, ewoluującym organizmem.
+<br>
+<b>Wnioski:</b> Aby promować innowacje, system motywacyjny musi nie tylko pozwalać na kreatywność, ale aktywnie i w sposób wyjątkowy ją nagradzać.
+    `,
+    options: []
+},
+END_TEAM_SUCCESS: {
+    title: "Zakończenie: Siła Drużyny",
+    description: `
+<b>Siłą firmy stały się niezwykle zgrane i efektywne zespoły.</b>
+
+Kultura promująca współpracę i wspólny sukces sprawiła, że firma jest w stanie realizować bardzo złożone projekty, które wymagają koordynacji wielu osób. Pracownicy czują silną przynależność do swoich zespołów i chętnie dzielą się wiedzą, aby pomóc kolegom.
+<br>
+<b>Wnioski:</b> Inwestycja w pracę zespołową buduje odporną i stabilną organizację, nawet jeśli indywidualne gwiazdy nie świecą tak jasno.
+    `,
+    options: []
+},
+END_WIKI_MODEL: {
+    title: "Zakończenie: Zaufanie pod Kontrolą",
+    description: `
+<b>Firma znalazła złoty środek między wolnością a kontrolą.</b>
+Model "Wiki z Recenzją" sprawił, że każdy czuje się uprawniony do dzielenia się wiedzą, a proces tworzenia jest szybki i zdecentralizowany. Jednocześnie rola recenzentów zapewnia, że do bazy nie trafiają oczywiste błędy. To dynamiczny i zdrowy kompromis.
+<br>
+<b>Wnioski:</b> Zamiast blokować, lepiej jest pozwalać na działanie i weryfikować je post-factum. Model oparty na zaufaniu i recenzji jest bardziej skalowalny niż model oparty na restrykcyjnej kontroli.
+    `,
+    options: []
+},
+END_TRUST_LEVELS: {
+    title: "Zakończenie: Merytokracja Oparta na Reputacji",
+    description: `
+<b>W firmie powstał naturalny i sprawiedliwy system oparty na reputacji.</b>
+
+Doświadczeni i rzetelni autorzy cieszą się dużą autonomią, a nowi pracownicy są naturalnie motywowani do podnoszenia jakości swojej pracy, aby "awansować" w systemie zaufania. Kuratorzy mogą skupić swoją energię tam, gdzie jest najbardziej potrzebna.
+<br>
+<b>Wnioski:</b> Systemy reputacji są potężnym narzędziem do skalowania procesów kontroli jakości, promując merytokrację i odciążając centralne jednostki.
+    `,
+    options: []
+},
+END_BRANCHING_MODEL: {
+    title: "Zakończenie: Inżynieria Wiedzy",
+    description: `
+<b>Firma zaczęła traktować swoją bazę wiedzy jak kod oprogramowania – z pełną kontrolą wersji.</b>
+Model "gałęzi" pozwala na bezpieczne i izolowane rozwijanie dużych, nowych koncepcji bez zaśmiecania głównej bazy. Proces "scalania" jest formalnym momentem transferu wiedzy. To bardzo zdyscyplinowane i inżynierskie podejście.
+<br>
+<b>Wnioski:</b> Zapożyczenie sprawdzonych praktyk z inżynierii oprogramowania (jak systemy kontroli wersji) może w radykalny sposób poprawić procesy zarządzania wiedzą.
+    `,
+    options: []
+},
+END_META_KNOWLEDGE: {
+    title: "Zakończenie: Architekci Informacji",
+    description: `
+<b>Firma zrozumiała, że ważniejsza od samej informacji jest jej struktura i łatwość odnajdywania.</b>
+  
+Kuratorzy, działając jako "architekci informacji", tworzą doskonałe mapy wiedzy, systemy tagowania i powiązań. Choć nie odpowiadają za treść, zapewniają, że nawigacja po bazie wiedzy jest intuicyjna, a użytkownicy mogą łatwo odkrywać nieoczywiste połączenia.
+<br>
+<b>Wnioski:</b> W dobie nadmiaru informacji, wartość tworzą nie ci, którzy produkują więcej treści, ale ci, którzy pomagają innym nadać jej sens i strukturę.
+    `,
+    options: []
+},
+END_AI_CITATIONS: {
+    title: "Zakończenie: Kultura Weryfikacji Źródeł",
+    description: `
+<b>Firma nauczyła się traktować AI jak niezwykle zdolnego researchera, a nie nieomylną wyrocznię.</b>
+<br>
+Obowiązek cytowania źródeł przez AI całkowicie zmienił sposób pracy. Pracownicy używają systemu do błyskawicznego znajdowania informacji, ale zawsze mają pod ręką link do oryginalnego dokumentu, aby zweryfikować kontekst. Zaufanie do narzędzia zostało odbudowane na zdrowych, naukowych zasadach.
+<br>
+<b>Wnioski:</b> Transparentność i możliwość weryfikacji są kluczowe dla budowania zaufania do systemów opartych na AI. "Zaufaj, ale sprawdź" stało się nową mantrą firmy.
+    `,
+    options: []
+},
+END_AI_CONFIDENCE: {
+    title: "Zakończenie: Zarządzanie Ryzykiem Informacyjnym",
+    description: `
+<b>Firma wdrożyła system, który pozwala jej świadomie zarządzać ryzykiem związanym z informacjami generowanymi przez AI.</b>
+<br>
+Dzięki "poziomom pewności", pracownicy wiedzą, kiedy mogą zaufać odpowiedzi, a kiedy muszą skonsultować się z ekspertem. Pozwoliło to na bezpieczne wykorzystanie AI w procesach o różnym stopniu krytyczności. Firma stała się mistrzem w pragmatycznym stosowaniu nowych technologii.
+<br>
+<b>Wnioski:</b> Nie każda informacja ma taką samą wagę. Zdolność do oceny i komunikowania poziomu pewności jest kluczową cechą dojrzałych systemów informacyjnych.
+    `,
+    options: []
+},
+END_AI_BOUNTY: {
+    title: "Zakończenie: Wspólne Uczenie Maszynowe",
+    description: `
+<b>Firma przekształciła problem "halucynacji" AI w ogólnofirmową grę, która stale ulepsza system.</b>
+
+Program "Łowców Błędów" stworzył kulturę, w której pracownicy aktywnie i krytycznie testują narzędzie, a ich wysiłek jest nagradzany. AI staje się coraz mądrzejsze dzięki zbiorowej inteligencji całej organizacji. To model, w którym człowiek i maszyna uczą się od siebie nawzajem.
+<br>
+<b>Wnioski:</b> Najlepsze systemy AI to te, które posiadają wbudowaną pętlę informacji zwrotnej od ludzkich użytkowników, pozwalającą na ich ciągłe doskonalenie.
+    `,
+    options: []
+},
+END_AI_DUAL_MODE: {
+    title: "Zakończenie: Zasada Dwóch Kluczy",
+    description: `
+<b>Firma wdrożyła "zasadę dwóch kluczy" dla najważniejszych decyzji, gdzie zarówno człowiek, jak i AI muszą się zgodzić.</b>
+Ten model, zapożyczony z systemów bezpieczeństwa, zapewnia niezwykle wysoki poziom niezawodności. Eliminuje zarówno ryzyko ludzkiego błędu, jak i błędu maszyny. Proces jest wolniejszy, ale dla krytycznych decyzji jest to akceptowalna cena za niemal absolutną pewność.
+<br>
+<b>Wnioski:</b> W systemach o krytycznym znaczeniu, synergia między inteligencją ludzką a sztuczną, połączona z mechanizmem wzajemnej kontroli, daje najlepsze rezultaty.
     `,
     options: []
 }
