@@ -19,29 +19,40 @@ const tree = {
 start: {
     title: "POZIOM 1: Punkt Wyjścia – Kryzys Strukturalny",
     description: `
-Trzon zespołu technicznego (około 70% działu) stanowią pracownicy z 15-20 letnim stażem. Są to wybitni specjaliści w swojej dziedzinie, którzy tworzyli kluczowe produkty firmy od podstaw. Ich wynagrodzenia, ze względu na staż, wiedzę i pozycję, należą do najwyższych na rynku. Firma przez lata ceniła ich lojalność i nie oszczędzała na pensjach.
-<br><br>
-<b>Problem</b>:
-W ciągu ostatnich dwóch lat na rynku pojawiło się dwóch nowych, zwinnych konkurentów. Oferują oni podobne produkty w modelu subskrypcyjnym, co jest znacznie tańsze dla klientów niż tradycyjne, drogie licencje sprzedawane przez "Expertis Systems". Marża firmy zaczęła gwałtownie spadać, a kilku kluczowych klientów nie przedłużyło umów, przechodząc do konkurencji. Zarząd staje przed presją obniżenia kosztów operacyjnych o 30% w ciągu najbliższych 18 miesięcy, aby firma pozostała rentowna. Największym kosztem są oczywiście pensje seniorów.
+Sytuacja bazowa:
+<br>
+Firma "Expertis Systems" posiada światowej klasy systemy do zarządzania wiedzą jawną – wszystko jest skrupulatnie dokumentowane w centralnym środowisku. Jednak jej prawdziwa przewaga konkurencyjna leży w wiedzy ukrytej, zgromadzonej przez 15-20 lat przez starzejący się zespół ekspertów. Wiedza ta obejmuje niepisane zasady, intuicję zdobytą przy rozwiązywaniu tysięcy problemów oraz unikalne doświadczenie (potwierdzone certyfikatami jak ISTQB). Firma stoi przed dwoma fundamentalnymi zagrożeniami:
+<br>
+<b>Ryzyko Utraty Wiedzy:</b> Zbliżające się emerytury i naturalna rotacja grożą bezpowrotną utratą tego bezcennego kapitału intelektualnego.
+<br>
+<b>Ryzyko Stagnacji:</b> Ta sama grupa ekspertów, będąca filarem firmy, wykazuje opór wobec nowych pomysłów, co blokuje innowacje i zdolność do konkurowania z nowymi, zwinnymi graczami na rynku.
+<br>
+<b>Cel strategiczny:</b> Zabezpieczyć i przetransferować krytyczną wiedzę ukrytą, jednocześnie przełamując stagnację i otwierając firmę na innowacje.
     `,
     options: [
         {
-            title: "Ścieżka A – Miękka Optymalizacja",
-            desc: "Zarząd decyduje się chronić zespół i najpierw szuka oszczędności poza wynagrodzeniami.",
-            impact: "Niskie napięcie w zespole, wolne tempo zmian.",
+            title: "Strategia 'Twierdzy Wiedzy' (Ochrona i Kodyfikacja)",
+            desc: "Absolutnym priorytetem jest ochrona i zarchiwizowanie istniejącej wiedzy ukrytej. Firma skupia wszystkie siły na wydobyciu i udokumentowaniu know-how weteranów, zanim będzie za późno. Innowacje są na drugim planie.",
+            impact: " ",
             next: "A1"
         },
         {
-            title: "Ścieżka B – Strategia Kompromisu",
-            desc: "Zarząd otwarcie komunikuje problem i proponuje podział kosztów kryzysu z pracownikami.",
-            impact: "Ryzyko utraty części kluczowych ludzi.",
+            title: "Strategia 'Żywej Sieci' (Transfer i Ewolucja) ",
+            desc: "Priorytetem jest stworzenie mechanizmów, w których wiedza jest przekazywana organicznie między ludźmi. Firma inwestuje w procesy społeczne, zakładając, że wiedza musi ciągle ewoluować w interakcjach, a nie być zamrożona w dokumentach.",
+            impact: " ",
             next: "B1"
         },
         {
-            title: "Ścieżka C – Radykalna Transformacja",
-            desc: "Priorytetem staje się szybkie przetrwanie – nawet kosztem zespołu.",
-            impact: "Szybkie efekty finansowe, wysoki szok organizacyjny.",
+            title: "Strategia 'Dwóch Prędkości' (Separacja i Inkubacja)",
+            desc: " Firma dzieli organizację na dwie części: 'Rdzeń' (Core), który utrzymuje i optymalizuje istniejące systemy, oraz 'Innowację' (Edge), która działa jak startup i eksploruje nowe terytoria. Obie części działają w dużej mierze niezależnie",
+            impact: "",
             next: "C1"
+        },
+        {
+            title: "Strategia 'Otwartego Ekosystemu' (Pozyskiwanie i Integracja)",
+            desc: "Priorytetem jest przełamanie stagnacji poprzez agresywne pozyskiwanie wiedzy z zewnątrz. Firma zakłada, że jej wewnętrzna wiedza jest niewystarczająca do przetrwania i musi być stale konfrontowana i wzbogacana przez zewnętrzne trendy, partnerów i nowe talenty.",
+            impact: " ",
+            next: "D1"
         }
     ]
 },
@@ -49,81 +60,239 @@ W ciągu ostatnich dwóch lat na rynku pojawiło się dwóch nowych, zwinnych ko
 /* ===== ŚCIEŻKA A ===== */
 
 A1: {
-    title: "POZIOM 2: Miękka Optymalizacja – Pierwsze Efekty",
+    title: "POZIOM 2: Strategia \"Twierdzy Wiedzy\" – Pierwsze Efekty",
     description: `
-Po 6 miesiącach wprowadzono oszczędności w biurach, licencjach, flotach i procesach zakupowych. Firma osiągnęła jedynie 8% redukcji kosztów.
-<br><br>
-Zespół czuje ulgę, ale zarząd widzi, że czas zaczyna działać na niekorzyść firmy. Inwestorzy wywierają coraz większą presję, a konkurencja nie zwalnia tempa.
+Firma uruchamia projekt "Archiwum Mózgów". Po roku okazuje się, że dokumentacja jest ogromna, ale płaska i pozbawiona kontekstu. Co gorsza, seniorzy, zmęczeni procesem "spisywania się", stali się jeszcze bardziej zamknięci i niechętni do dzielenia się wiedzą "nieformalnie", odsyłając wszystkich do "oficjalnej dokumentacji".<b> Wiedza została zapisana, ale jej duch umarł.</b>
     `,
     options: [
         {
-            title: "Automatyzacja i standaryzacja",
-            desc: "Inwestycja w narzędzia IT, które zdejmą z seniorów część pracy operacyjnej.",
-            impact: "Wysokie koszty początkowe, efekty odroczone.",
+            title: "Stworzenie 'Biblioteki Scenariuszy' (Case-Based Reasoning)",
+            desc: "Zamiast suchych procedur, firma tworzy bazę danych szczegółowo opisanych, rzeczywistych problemów i sposobów ich rozwiązania, wzbogaconą o komentarze wideo ekspertów wyjaśniających, dlaczego podjęli takie decyzje.",
+            impact: "",
             next: "A2"
         },
         {
-            title: "Spóźniony kompromis",
-            desc: "Rozpoczęcie rozmów płacowych po wcześniejszych zapewnieniach o ich braku.",
-            impact: "Spadek zaufania.",
+            title: "Wdrożenie 'Systemów Eksperckich'",
+            desc: "Inwestycja w interaktywne systemy oparte na regułach, które prowadzą użytkownika przez proces decyzyjny, symulując rozmowę z ekspertem.",
+            impact: "",
             next: "A2B"
+        },
+           {
+            title: "Grywalizacja Użycia Wiedzy",
+            desc: "Stworzenie gry symulacyjnej, w której młodsi pracownicy muszą rozwiązywać wirtualne kryzysy, korzystając wyłącznie z bazy wiedzy. Najlepsi otrzymują nagrody i publiczne uznanie.",
+            impact: "",
+            next: "A2C"
+        },
+           {
+            title: "Powołanie \"Kuratorów Wiedzy\"",
+            desc: "Wyznaczenie grupy osób (mieszanej wiekowo), których zadaniem jest nie tylko pisanie, ale stałe \"opowiadanie\" i kontekstualizowanie wiedzy z bazy podczas regularnych sesji i warsztatów.",
+            impact: "",
+            next: "A2D"
+        },
+        {
+            title: "Wykorzystanie AI do semantycznego wyszukiwania",
+            desc: "Inwestycja w silnik AI, który nie tylko przeszukuje słowa kluczowe, ale rozumie kontekst zapytania i potrafi budować odpowiedzi na podstawie wielu, pozornie niepowiązanych dokumentów.",
+            impact: "",
+            next: "A2E"
         }
     ]
 },
 
 A2: {
-    title: "POZIOM 3: Automatyzacja – Zderzenie z Rzeczywistością",
+    title: "POZIOM 3: Po wdrożeniu \"Biblioteki Scenariuszy\"",
     description: `
-Nowe narzędzia poprawiają efektywność, ale ich wdrożenie trwa dłużej niż planowano. Seniorzy są zmęczeni zmianami, a oszczędności rosną powoli.
-<br><br>
-Po 18 miesiącach firma osiąga tylko 20% redukcji kosztów – wciąż zbyt mało, aby zaspokoić oczekiwania zarządu i inwestorów.
+Baza scenariuszy okazała się sukcesem. Młodsi pracownicy uczą się na konkretnych, historycznych przykładach, a wiedza kontekstowa jest zachowywana. Jednak pojawił się nowy problem: "paraliż analityczny" i strach przed tworzeniem nowych precedensów. Pracownicy, mając dostęp do "jedynych słusznych" rozwiązań z przeszłości, boją się podejmować decyzje w sytuacjach, które nie pasują idealnie do żadnego scenariusza w bazie. Innowacyjność spada, a firma staje się mistrzem w rozwiązywaniu starych problemów, ale bezradna wobec nowych.
     `,
     options: [
         {
-            title: "Akceptacja wolniejszej transformacji",
-            desc: "Firma stabilizuje się, ale rezygnuje z agresywnego wzrostu.",
-            impact: "Bezpieczna egzystencja, brak przewagi rynkowej.",
+            title: "Program \"Eksperyment kontrolowany\"",
+            desc: "Wprowadzenie formalnej ścieżki, która pozwala pracownikom na świadome odejście od udokumentowanego scenariusza, pod warunkiem, że zdefiniują hipotezę, potencjalne ryzyka i sposób pomiaru wyników. Udane eksperymenty stają się nowymi, wzorcowymi scenariuszami w bazie.",
+            impact: "",
             next: "END_SLOW"
         },
         {
-            title: "Przymusowa eskalacja",
-            desc: "W końcu trzeba sięgnąć po trudniejsze decyzje kadrowe.",
-            impact: "Poczucie zdrady u zespołu.",
+            title: "Grywalizacja \"Najbardziej Kreatywnego Rozwiązania\"",
+            desc: "Stworzenie kwartalnego konkursu, w którym nagradzane jest nie rozwiązanie problemu zgodnie z bazą, ale znalezienie nowatorskiego sposobu, który okazał się lepszy (szybszy, tańszy, bardziej elegancki). Nagroda jest znacząca i promuje odwagę.",
+            impact: " ",
+            next: "A3"
+        },
+        {
+            title: "Wprowadzenie \"Dnia Porażki\" (Failure Friday)",
+            desc: "Regularne sesje, na których pracownicy (w tym seniorzy) otwarcie omawiają swoje nieudane próby rozwiązania problemów. Celem jest zbudowanie kultury, w której porażka w poszukiwaniu lepszego rozwiązania jest akceptowana i traktowana jako cenna lekcja.",
+            impact: "",
+            next: "A3"
+        },
+        {
+            title: "Stworzenie \"Symulatora Problemów\"",
+            desc: " Inwestycja w zaawansowane środowisko symulacyjne, gdzie pracownicy mogą testować swoje nowe, niekonwencjonalne pomysły na wirtualnych systemach bez ryzyka dla produkcji. Pozwala to na bezpieczne eksperymentowanie i budowanie pewności siebie.",
+            impact: "",
             next: "A3"
         }
     ]
 },
 
 A2B: {
-    title: "POZIOM 3: Spóźniony Kompromis – Kryzys Zaufania",
+    title: "POZIOM 3: Po wdrożeniu \"Systemów Eksperckich\"",
     description: `
-Kiedy zarząd wraca do tematu wynagrodzeń po wcześniejszych zapewnieniach, że ich nie ruszy, w zespole wybucha gniew. Część seniorów czuje się oszukana.
-<br><br>
-40% najlepszych specjalistów odchodzi natychmiast, nie czekając nawet na nową ofertę. Projekty się sypią, klienci narzekają.
+Inwestycja w systemy eksperckie przyniosła wymierne korzyści. Młodsi pracownicy, prowadzeni "za rękę" przez interaktywny system, są w stanie samodzielnie rozwiązywać problemy, które wcześniej wymagały interwencji seniora. System skutecznie symuluje proces decyzyjny ekspertów. Jednak po pewnym czasie ujawnia się niepokojący efekt uboczny: "atrofia myślenia krytycznego". Pracownicy stają się nadmiernie zależni od systemu. Zamiast uczyć się dlaczego podejmowane są pewne kroki, uczą się jedynie, jak klikać kolejne opcje. Gdy pojawia się problem spoza zdefiniowanych reguł, są bezradni. Zamiast rozwijać własną intuicję, polegają na "intuicji maszyny".
     `,
     options: [
         {
-            title: "Próba odbudowy zaufania",
-            desc: "Inwestycja w kulturę organizacyjną i transparentność.",
-            impact: "Długi proces, niepewny rezultat.",
+            title: "Wprowadzenie \"Trybu Wyjaśniania\"",
+            desc: "Rozbudowa systemu eksperckiego o obowiązkową funkcję, która po każdym zasugerowanym kroku wyświetla użytkownikowi pytanie: \"Dlaczego system zarekomendował to rozwiązanie?\". Użytkownik musi wybrać jedną z kilku możliwych przyczyn lub wpisać własną, a system ocenia jego odpowiedź. Zmienia to pasywne klikanie w aktywną naukę.",
+            impact: "",
+            next: "END_TRUST_CRISIS"
+        },
+                {
+            title: "Stworzenie \"Symulatora Awarii Systemu Eksperckiego\"",
+            desc: "Wprowadzenie programu treningowego, w którym pracownicy są konfrontowani z problemami w symulatorze, gdzie system ekspercki celowo podaje błędne lub nieoptymalne rekomendacje. Zadaniem pracownika jest zidentyfikowanie błędu w logice systemu i zaproponowanie lepszego rozwiązania. Buduje to nieufność do narzędzia i wzmacnia własne myślenie.",
+            impact: "",
+            next: "END_TRUST_CRISIS"
+        },
+                {
+            title: "Program \"Budowniczych Reguł\"",
+            desc: "Zamiast tylko korzystać z systemu, najlepsi młodsi pracownicy są włączani do zespołu, który rozwija i dodaje nowe reguły do systemu eksperckiego. Aby to zrobić, muszą dogłębnie zrozumieć logikę działania systemów i przeprowadzić wywiady z seniorami, co jest najwyższą formą nauki.",
+            impact: "",
+            next: "END_TRUST_CRISIS"
+        },
+            {
+            title: "Ograniczenie dostępu do systemu dla nowych problemów",
+            desc: "Wprowadzenie zasady, że system ekspercki może być używany tylko do problemów, które już kiedyś wystąpiły. W przypadku całkowicie nowego, nierozpoznanego problemu, pracownik ma obowiązek podjąć próbę samodzielnego rozwiązania go \"od zera\", a dopiero jego udokumentowane rozwiązanie może posłużyć do rozbudowy systemu.",
+            impact: "",
             next: "END_TRUST_CRISIS"
         }
     ]
 },
 
-A3: {
-    title: "POZIOM 4: Przymusowa Eskalacja",
+A2C: {
+    title: "POZIOM 3: Po wdrożeniu \"Grywalizacji Użycia Wiedzy\"",
     description: `
-Po roku łagodnego podejścia, firma w końcu wprowadza obniżki wynagrodzeń i redukcję etatów. Zespół odbiera to jako zdradę po całym okresie "ochrony".
-<br><br>
-Morale spada drastycznie, a najbardziej wartościowi pracownicy zaczynają szukać nowych możliwości.
+Gra symulacyjna i system rankingowy okazały się strzałem w dziesiątkę. Zaangażowanie w korzystanie z bazy wiedzy wzrosło lawinowo. Młodsi pracownicy rywalizują o punkty i odznaki, a przy okazji uczą się, jak wykorzystywać udokumentowaną wiedzę. Jednak po kilku kwartałach ujawnia się mroczna strona grywalizacji: "optymalizacja pod metryki" i spadek jakości. Pracownicy, chcąc maksymalizować swoje wyniki w grze, zaczynają wybierać najprostsze, najszybsze ścieżki, które dają najwięcej punktów, nawet jeśli nie są to najlepsze rozwiązania w danym kontekście. Pojawia się zjawisko "hakowania systemu" – unikanie trudnych, niepunktowanych problemów i skupianie się na ilości, a nie na jakości.
     `,
     options: [
         {
-            title: "Stabilizacja organizacji",
-            desc: "Przyjęcie, że firma będzie mniejsza, ale przetrwa.",
-            impact: "Kultura organizacyjna trwale nadszarpnięta.",
+            title: "Wprowadzenie \"Punktów Jakości\" przyznawanych przez recenzentów",
+            desc: "Zmiana systemu punktacji. Zamiast automatycznie przyznawać punkty za rozwiązanie problemu, rozwiązanie jest poddawane ocenie (peer review) przez losowo wybranego seniora lub członka \"Gildii Jakości\". Punkty są przyznawane nie za szybkość, ale za elegancję, solidność i długoterminową wartość rozwiązania.",
+            impact: "",
             next: "END_LATE_CUTS"
+        },
+                {
+            title: "Stworzenie \"Odznak za Trudne Wyzwania\" (Achievement Unlocked)",
+            desc: "Wprowadzenie specjalnych, bardzo prestiżowych i wysoko punktowanych odznak, które można zdobyć tylko za rozwiązanie problemów z listy \"najtrudniejszych\" lub takich, z którymi nikt inny nie mógł sobie poradzić przez dłuższy czas. Przenosi to fokus z ilości na rozwiązywanie kluczowych, strategicznych problemów.",
+            impact: "",
+            next: "END_LATE_CUTS"
+        },
+                {
+            title: "Wprowadzenie \"Mnożnika za Kreatywność\"",
+            desc: "Dodanie do systemu mechanizmu, w którym pracownik może zgłosić swoje rozwiązanie jako \"nowatorskie\" (tj. nieoparte na istniejącej bazie wiedzy). Jeśli specjalna komisja uzna, że rozwiązanie jest rzeczywiście nowe i wartościowe, pracownik otrzymuje zwielokrotnioną liczbę punktów, a jego rozwiązanie staje się nowym wzorcem w bazie.",
+            impact: "",
+            next: "END_LATE_CUTS"
+        },
+                {
+            title: "Zastąpienie rywalizacji indywidualnej rywalizacją zespołową:",
+            desc: "Zmiana zasad gry. Zamiast indywidualnych rankingów, firma wprowadza rankingi zespołowe lub \"gildyjne\". Zespół zdobywa punkty tylko wtedy, gdy wszyscy jego członkowie osiągną pewien próg kompetencji. Promuje to współpracę i wzajemne wsparcie wewnątrz zespołu, zamiast egoistycznej walki o punkty.",
+            impact: "",
+            next: "END_LATE_CUTS"
+        }
+    ]
+},
+A2D: {
+    title: "POZIOM 4:  Po powołaniu \"Kuratorów Wiedzy\"",
+    description: `
+Powołanie Kuratorów Wiedzy przyniosło porządek. Baza wiedzy jest teraz dobrze zorganizowana, zaktualizowana i pozbawiona duplikatów. Jakość dokumentacji znacząco wzrosła. Jednak stworzyło to nowy, nieprzewidziany problem: powstanie "kasty strażników" i wąskiego gardła. Kuratorzy, dumni ze swojej roli, stali się nadgorliwymi strażnikami "jedynej słusznej wersji prawdy". Proces dodawania lub aktualizowania jakiejkolwiek informacji stał się długi i biurokratyczny, wymagając akceptacji kilku kuratorów. Zamiast zachęcać do dzielenia się wiedzą, system zniechęca zwykłych pracowników, którzy nie chcą przechodzić przez żmudny proces weryfikacji. 
+<br>
+<b>Wiedza jest wysokiej jakości, ale jej przepływ i tworzenie niemal zamarły.</b>
+    `,
+    options: [
+        {
+            title: "Wprowadzenie modelu \"Wiki z Recenzją\" (Wikipedia-style Moderation)",
+            desc: " Zmiana uprawnień. Każdy pracownik może edytować i dodawać treści do bazy wiedzy, ale każda zmiana jest flagowana jako \"niezweryfikowana\". Kuratorzy nie są już \"bramkarzami\", ale \"recenzentami\", którzy patrolują ostatnie zmiany, zatwierdzając je lub odrzucając. Uwalnia to tworzenie wiedzy, zachowując mechanizm kontroli.",
+            impact: "",
+            next: "END_LATE_CUTS"
+        },
+                {
+            title: "Stworzenie \"Poziomów Zaufania\" dla autorów",
+            desc: "Wprowadzenie systemu reputacji. Nowi pracownicy mogą dodawać treści, które zawsze wymagają weryfikacji. Pracownicy, którzy regularnie tworzą wysokiej jakości, akceptowane treści, zdobywają wyższy \"poziom zaufania\", a ich zmiany są publikowane natychmiast, bez konieczności recenzji. Kuratorzy skupiają się tylko na autorach niskiego zaufania.",
+            impact: "",
+            next: "END_LATE_CUTS"
+        },
+                {
+            title: "Wprowadzenie \"Gałęzi Wiedzy\" (Knowledge Branching)",
+            desc: " Zapożyczenie mechanizmu z systemów kontroli wersji (jak Git). Pracownik, który chce zaproponować dużą zmianę lub nową koncepcję, tworzy \"gałąź\" w bazie wiedzy. Może w niej swobodnie pracować, a gdy uzna, że jest gotowa, zgłasza ją do \"scalenia\" z główną bazą, co jest formalnym momentem recenzji przez kuratorów.",
+            impact: "",
+            next: "END_LATE_CUTS"
+        },
+                {
+            title: "Ograniczenie roli Kuratorów do \"Meta-Wiedzy\"",
+            desc: "Zmiana zakresu odpowiedzialności kuratorów. Nie zajmują się już treścią poszczególnych artykułów, ale \"wiedzą o wiedzy\". Ich zadaniem jest dbanie o strukturę bazy, system tagowania, tworzenie powiązań między artykułami i budowanie \"map wiedzy\", które pomagają użytkownikom nawigować po informacjach. Odpowiedzialność za treść spoczywa na autorach i ich zespołach.",
+            impact: "",
+            next: "END_LATE_CUTS"
+        }
+    ]
+},
+
+A2E: {
+    title: "POZIOM 3: Po wykorzystaniu AI do semantycznego wyszukiwania",
+    description: `
+System AI działa świetnie i jest intensywnie używany. Pracownicy mogą zadawać pytania w naturalnym języku i otrzymują precyzyjne odpowiedzi na podstawie wiedzy rozproszonej po całej bazie. Jednak firma stała się nadmiernie zależna od tego "czarnego pudełka". Nikt nie rozumie, jak dokładnie AI konstruuje swoje odpowiedzi. Pojawiają się przypadki "halucynacji" systemu - przekonująco brzmiących, ale błędnych odpowiedzi. Pracownicy, zaufawszy technologii, przestają weryfikować informacje, co prowadzi do poważnych błędów w projektach.
+    `,
+    options: [
+        {
+            title: "Wprowadzenie obowiązkowego \"Śladu źródeł\"",
+            desc: "Modyfikacja systemu AI tak, aby każda odpowiedź była obligatoryjnie opatrzona listą konkretnych dokumentów i fragmentów, na których się oparła. Użytkownik może kliknąć i zweryfikować źródło, zamiast ślepo ufać wynikom.",
+            impact: "",
+            next: "END_LATE_CUTS"
+        },
+        {
+            title: "System \"Confidence Score\" i weryfikacji",
+            desc: "AI przypisuje każdej swojej odpowiedzi poziom pewności (np. 0-100%). Odpowiedzi poniżej pewnego progu (np. 80%) wymagają obowiązkowej weryfikacji przez eksperta przed wykorzystaniem w produkcji.",
+            impact: "",
+            next: "END_LATE_CUTS"
+        },
+        {
+            title: "Program \"Łowców Błędów AI\"",
+            desc: "Stworzenie systemu nagród dla pracowników, którzy identyfikują i zgłaszają błędne odpowiedzi AI. Najlepsi 'łowcy' otrzymują prestiżowe wyróżnienia, a wykryte błędy są wykorzystywane do treningu i poprawy modelu.",
+            impact: "",
+            next: "END_LATE_CUTS"
+        },
+        {
+            title: "Dual-Mode: \"AI + Human\"",
+            desc: "Dla kluczowych decyzji wprowadzenie zasady podwójnej weryfikacji - zarówno system AI, jak i doświadczony pracownik muszą niezależnie odpowiedzieć na pytanie. Jeśli odpowiedzi się różnią, uruchamia się proces pogłębionej analizy.",
+            impact: "",
+            next: "END_LATE_CUTS"
+        }
+    ]
+},
+
+A3: {
+    title: "POZIOM 4:  Po wdrożeniu dodatkowych mechanizmów wspierających kreatywność",
+    description: `
+Nowe inicjatywy (konkursy kreatywności, Dni Porażki, symulatory) przyniosły rezultaty. Pracownicy czują się bezpieczniej przy eksperymentowaniu, a innowacyjność wzrosła. Jednak firma stanęła przed nowym wyzwaniem: "chaos innowacyjny". Każdy zespół prowadzi dziesiątki małych eksperymentów, ale brakuje koordynacji i mechanizmu do skalowania udanych pomysłów. Firma ma wiele dobrych prototypów, ale nie potrafi ich przekształcić w realne produkty. Innowacje są, ale rozproszone i nieskuteczne komercyjnie.
+    `,
+    options: [
+        {
+            title: "Powołanie \"Rady Innowacji\"",
+            desc: "Stworzenie centralnego organu, który kwartalnie przegląda wszystkie eksperymentalne projekty, wybiera najbardziej obiecujące i przydziela im budżet oraz zasoby do dalszego rozwoju i komercjalizacji.",
+            impact: "",
+            next: "END_BALANCED"
+        },
+        {
+            title: "Model \"Doliny Śmierci\" (Bridge Fund)",
+            desc: "Utworzenie specjalnego funduszu dla projektów, które przeszły fazę prototypu, ale potrzebują wsparcia, aby stać się produktem. Zespoły mogą aplikować o granty na pokrycie 'doliny śmierci' między dowodem koncepcji a wdrożeniem.",
+            impact: "",
+            next: "END_BALANCED"
+        },
+        {
+            title: "System \"Sponsorów Wewnętrznych\"",
+            desc: "Każdy obiecujący projekt musi znaleźć sobie 'sponsora' wśród kadry zarządzającej, który staje się jego orędownikiem, pomaga w nawigacji po organizacji i zapewnia dostęp do zasobów.",
+            impact: "",
+            next: "END_BALANCED"
+        },
+        {
+            title: "\"Targ Pomysłów\" wewnętrzny",
+            desc: "Regularne wydarzenie, na którym zespoły mogą 'sprzedawać' swoje pomysły innym działom. Jeśli dział znajdzie aplikację dla eksperymentalnego rozwiązania, może przejąć projekt i rozwijać go we własnym zakresie.",
+            impact: "",
+            next: "END_BALANCED"
         }
     ]
 },
@@ -131,133 +300,506 @@ Morale spada drastycznie, a najbardziej wartościowi pracownicy zaczynają szuka
 /* ===== ŚCIEŻKA B ===== */
 
 B1: {
-    title: "POZIOM 2: Strategia Kompromisu – Koszt Zaufania",
+    title: "POZIOM 2: Strategia \"Żywej Sieci\" – Koszt Zaufania",
     description: `
-70% zespołu zgadza się na obniżkę wynagrodzeń w zamian za udziały i gwarancje zatrudnienia. 30% najbardziej mobilnych seniorów odchodzi do konkurencji lub startupów.
-<br><br>
-Firma osiąga cel kosztowy, ale traci część kluczowej wiedzy. Niektóre projekty zostają wstrzymane z powodu braków kompetencyjnych.
+Programy mentoringowe i społeczności praktyków (CoP) działają prężnie. Jednak pojawił się problem <b>"echa i plemienności"</b>. Wiedza krąży, ale tylko w zamkniętych kręgach. Zamiast jednej, spójnej kultury, powstało wiele "plemion" skupionych wokół poszczególnych ekspertów, które niechętnie współpracują i rywalizują ze sobą. Transfer wiedzy działa, ale tworzy silosy.
     `,
     options: [
         {
-            title: "Zarządzanie luką kompetencyjną",
-            desc: "Budowa dokumentacji i mentoring młodszych pracowników.",
-            impact: "Duże obciążenie pozostałych seniorów.",
+            title: "Wprowadzenie \"Roli Brokera Wiedzy\"",
+            desc: "Stworzenie formalnej roli osób, których zadaniem i miarą sukcesu jest aktywne przenoszenie wiedzy i dobrych praktyk pomiędzy różnymi społecznościami i zespołami.",
+            impact: "",
             next: "B2"
         },
         {
-            title: "Szybkie zastępstwa",
-            desc: "Rekrutacja tańszych specjalistów z rynku.",
-            impact: "Spadek jakości i opóźnienia projektów.",
+            title: "Zorganizowanie \"Targów Wiedzy\" (Knowledge Fair)",
+            desc: "Regularne, wewnętrzne wydarzenia, na których każdy zespół/plemię musi zaprezentować swoje najciekawsze rozwiązania i projekty, promując wymianę i zapylanie krzyżowe pomysłów.",
+            impact: "",
             next: "B2B"
+        },
+                {
+            title: "Program Obowiązkowych Rotacji",
+            desc: "Wprowadzenie zasady, że co 12-18 miesięcy pracownicy (zwłaszcza ci o wysokim potencjale) muszą zmienić zespół lub społeczność praktyków, aby zapobiec intelektualnemu zasiedzeniu",
+            impact: "",
+            next: "B2C"
+        },
+                {
+            title: "Stworzenie \"Map Kompetencji\" (Yellow Pages)",
+            desc: " Zbudowanie interaktywnej mapy, która wizualizuje, kto jest ekspertem w jakiej dziedzinie, ale także kto z kim współpracuje, ujawniając \"dziury\" w sieci i izolowane grupy.",
+            impact: "",
+            next: "B2D"
+        },
+                {
+            title: "Wprowadzenie \"Odwrotnego Mentoringu\"",
+            desc: "Stworzenie par, w których młodszy pracownik uczy seniora nowych technologii, co zmusza do wyjścia poza strefę komfortu i nawiązania relacji poza tradycyjną hierarchią.",
+            impact: "",
+            next: "B2E"
         }
     ]
 },
 
 B2: {
-    title: "POZIOM 3: Odbudowa Wiedzy",
+    title: "POZIOM 3: Po wprowadzeniu \"Roli Brokera Wiedzy\"",
     description: `
-Proces odbudowy kompetencji trwa 12 miesięcy. Firma stopniowo odzyskuje stabilność dzięki intensywnej dokumentacji i transferowi wiedzy.
-<br><br>
-Zespół jest mniejszy i bardziej elastyczny, lecz mniej doświadczony. Pojawiają się nowe pomysły od młodszych pracowników.
+Brokerzy Wiedzy okazali się skuteczni w przełamywaniu silosów. Aktywnie przenoszą informacje, łączą ludzi z różnych "plemion" i inicjują współpracę. Jednak ich unikalna, centralna pozycja w sieci informacyjnej firmy stworzyła nowy problem: stali się oni krytycznym, pojedynczym punktem awarii (single point of failure) i nieformalnym centrum władzy. Ich osobiste sympatie i antypatie zaczynają wpływać na to, która wiedza jest transferowana, a która ignorowana. Zespoły, zamiast budować bezpośrednie relacje, uzależniają się od "swojego" brokera.
     `,
     options: [
         {
-            title: "Nowy model operacyjny",
-            desc: "Firma redefiniuje swoje produkty i sposób pracy.",
-            impact: "Długofalowa stabilizacja.",
+            title: "Rotacyjność Roli Brokera",
+            desc: "Wprowadzenie zasady, że rola Brokera Wiedzy jest kadencyjna i trwa maksymalnie 12 miesięcy. Po tym okresie, obowiązki musi przejąć inna osoba z zespołu. Zapobiega to kumulacji władzy i zapewnia, że umiejętności \"brokerskie\" rozprzestrzeniają się w organizacji.",
+            impact: "",
+            next: "END_BALANCED"
+        },
+                {
+            title: "Stworzenie \"Rady Brokerów\"",
+            desc: "Zamiast pojedynczych brokerów działających niezależnie, firma tworzy Radę Brokerów, która spotyka się co tydzień, aby transparentnie omawiać przepływ informacji i podejmować wspólne decyzje. Zmniejsza to ryzyko osobistych uprzedzeń i tworzy mechanizm wzajemnej kontroli.",
+            impact: "",
+            next: "END_BALANCED"
+        },
+                {
+            title: "Automatyzacja \"Odkrywania Połączeń\"",
+            desc: "Inwestycja w narzędzie (np. oparte o analizę grafów), które analizuje komunikację w firmie (maile, czaty, dokumenty) i automatycznie sugeruje potencjalne punkty współpracy między zespołami, wskazując konkretne osoby i tematy. Zmniejsza to zależność od ludzkiej percepcji brokerów.",
+            impact: "",
+            next: "END_BALANCED"
+        },
+                {
+            title: "System \"Prowizji od Transferu\" ",
+            desc: " Zamiast stałej roli, każdy pracownik może otrzymać \"prowizję\" (w formie punktów, bonusu) za udokumentowane i ocenione przez obie strony udane połączenie dwóch różnych zespołów, które przyniosło wymierną korzyść. Zmienia to \"brokerstwo\" z roli w ogólnofirmową aktywność",
+            impact: "",
             next: "END_BALANCED"
         }
     ]
 },
 
 B2B: {
-    title: "POZIOM 3: Szybkie Zastępstwa – Turbulencje",
+    title: "POZIOM 3: Po zorganizowaniu \"Targów Wiedzy\" (Knowledge Fair)",
     description: `
-Nowi pracownicy są tańsi, ale mają problemy z zaadaptowaniem się do złożonych systemów. Projekty się opóźniają, błędy mnożą się.
-<br><br>
-Klienci zaczynają tracić cierpliwość. Firma traci jeszcze 2 dużych kontraktów.
+Targi Wiedzy stały się popularnym, corocznym wydarzeniem. Zespoły prezentują swoje osiągnięcia, a pracownicy mają okazję zobaczyć, co dzieje się w innych częściach firmy. Jednak z czasem wydarzenie przekształciło się w "teatr innowacji". Zespoły, chcąc się jak najlepiej zaprezentować, pokazują jedynie dopracowane sukcesy, ukrywając porażki, problemy i prawdziwe wyzwania. Transfer wiedzy staje się powierzchowny – to bardziej marketing wewnętrzny niż autentyczne dzielenie się doświadczeniem.
     `,
     options: [
         {
-            title: "Powrót do stabilizacji",
-            desc: "Spowolnienie rekrutacji, skupienie na jakości.",
-            impact: "Firma przetrwa, ale osłabiona.",
+            title: "Wprowadzenie \"Strefy Porażki\" (Failure Zone)",
+            desc: "Stworzenie na targach dedykowanej, popularnej strefy, gdzie zespoły są nagradzane (np. dodatkowymi punktami, budżetem na integrację) za zaprezentowanie swoich największych porażek i wniosków, jakie z nich wyciągnęły.",
+            impact: "",
             next: "END_QUALITY_DROP"
         },
         {
-            title: "Desperacka próba ratunku",
-            desc: "Zatrudnienie z powrotem części odeszłych seniorów za wysokie premie.",
-            impact: "Bardzo kosztowne, ale może uratować sytuację.",
-            next: "END_EXPENSIVE_RETURN"
+            title: "Format \"Poproś o Pomoc\"",
+            desc: "Zmiana formuły prezentacji. Zamiast tylko chwalić się sukcesami, każdy zespół musi przedstawić jeden kluczowy problem, z którym się boryka i na który szuka rozwiązania. Reszta uczestników targów może na żywo proponować rozwiązania, a najlepsze pomysły są nagradzane.",
+            impact: "",
+            next: "END_QUALITY_DROP"
+        },
+                {
+            title: "Targi \"Problemów\", a nie \"Rozwiązań\"",
+            desc: "Zorganizowanie wydarzenia, które w całości jest poświęcone prezentacji nierozwiązanych jeszcze problemów. Zespoły przychodzą, aby \"sprzedać\" swój problem innym, licząc na to, że ktoś z innej dziedziny znajdzie na niego sposób.",
+            impact: "",
+            next: "END_QUALITY_DROP"
+        },
+                {
+            title: "Warsztaty zamiast Prezentacji",
+            desc: "Zastąpienie pasywnych prezentacji interaktywnymi, praktycznymi warsztatami. Zespół, zamiast opowiadać o swoim narzędziu, musi w ciągu godziny nauczyć przedstawicieli innych zespołów, jak z niego korzystać do rozwiązania konkretnego zadania.",
+            impact: "",
+            next: "END_QUALITY_DROP"
         }
     ]
 },
-
-/* ===== ŚCIEŻKA C ===== */
-
-C1: {
-    title: "POZIOM 2: Radykalna Transformacja – Szok",
+B2C: {
+    title: "POZIOM 3: Po wprowadzeniu \"Programu Obowiązkowych Rotacji\"",
     description: `
-25% zespołu zostaje zwolnione w ciągu 3 miesięcy. Cel kosztowy osiągnięto natychmiast. Pozostali pracownicy są przeciążeni i przestraszeni.
-<br><br>
-Produkty zaczynają generować błędy. Klienci zgłaszają problemy z obsługą. W firmie panuje atmosfera strachu.
+Program rotacji skutecznie przełamał silosy i zapobiegł "plemienności". Pracownicy poznają różne części organizacji, a wiedza krąży swobodnie. Jednak po roku ujawniły się poważne skutki uboczne: "utrata ciągłości" i spadek odpowiedzialności. Zespoły tracą pamięć instytucjonalną, bo zanim ktoś naprawdę nauczy się systemu, zostaje przeniesiony gdzie indziej. Nikt nie czuje się prawdziwym właścicielem żadnego komponentu, bo "za pół roku i tak będę gdzie indziej". Jakość kodu i dokumentacji spada, a długoterminowe konsekwencje decyzji są ignorowane.
     `,
     options: [
         {
-            title: "Stabilizacja po szoku",
-            desc: "Zatrzymanie dalszych zmian i odbudowa morale.",
-            impact: "Utrata dynamiki innowacyjnej.",
+            title: "Model \"Gildii i Oddziałów\"",
+            desc: " Pracownicy na stałe należą do jednego \"Oddziału\" (np. zespół produktowy), ale jednocześnie są członkami przekrojowej \"Gildii\" (np. gildia backendu). Rotacje odbywają się w ramach oddziałów, ale przynależność do gildii zapewnia ciągłość i dbałość o standardy w danej dziedzinie.",
+            impact: "",
+            next: "END_LATE_CUTS"
+        },
+                {
+            title: "Wprowadzenie roli \"Kustosza Komponentu\"",
+            desc: "Wyznaczenie dla każdego krytycznego modułu systemu stałego \"kustosza\" – doświadczonego eksperta, który nie podlega rotacji. Jego zadaniem jest dbanie o długoterminową jakość i architekturę komponentu oraz bycie mentorem dla rotujących członków zespołu.",
+            impact: "",
+            next: "END_LATE_CUTS"
+        },        {
+            title: "Struktura \"Dom/Gościna\"",
+            desc: "Zmiana modelu rotacji. 80% czasu pracownik spędza w swoim \"domowym\" zespole, budując głęboką wiedzę. Przez pozostałe 20% czasu jest \"gościem\" w innym zespole, przynosząc świeże spojrzenie i ucząc się nowych rzeczy, ale bez utraty poczucia przynależności.",
+            impact: "",
+            next: "END_LATE_CUTS"
+        },        {
+            title: "Dokumentacja jako warunek rotacji",
+            desc: " Wprowadzenie zasady, że pracownik nie może zakończyć swojej rotacji w zespole, dopóki nie stworzy lub nie zaktualizuje dokumentacji swojego obszaru do poziomu, który pozwoli jego następcy na płynne przejęcie obowiązków.",
+            impact: "",
+            next: "END_LATE_CUTS"
+        }
+    ]
+},
+B2D: {
+    title: "POZIOM 3: Po stworzeniu \"Map Kompetencji\"",
+    description: `
+Mapa Kompetencji działa i jest intensywnie używana. Znalezienie odpowiedniego eksperta w firmie stało się banalnie proste. Jednak doprowadziło to do "syndromu gwiazdy rocka". Kilku ekspertów, zidentyfikowanych przez system jako kluczowi w wielu dziedzinach, jest nieustannie zasypywanych prośbami o pomoc. Stają się oni wąskim gardłem, są przemęczeni i nie mają czasu na swoją własną pracę. Reszta pracowników, zamiast próbować samodzielnie rozwiązać problem, idzie na skróty, od razu pytając "gwiazdę".
+    `,
+    options: [
+        {
+            title: "Wprowadzenie \"Godzin Konsultacji\"",
+            desc: "Każdy ekspert ma w kalendarzu wyznaczone i chronione \"godziny dla firmy\" (np. 4 godziny w tygodniu), podczas których jest dostępny dla innych. Poza tym czasem ma prawo odmówić pomocy, aby móc skupić się na własnych zadaniach.",
+            impact: "",
+            next: "END_LATE_CUTS"
+        },
+                {
+            title: "System \"Płać za Czas Eksperta\"",
+            desc: "Wprowadzenie wewnętrznej \"waluty\" lub budżetu. Każdy zespół otrzymuje pulę \"godzin eksperckich\", które może \"wykupić\" u specjalistów z innych zespołów. Gdy budżet się skończy, muszą radzić sobie sami. Uczy to oszczędnego korzystania z najcenniejszego zasobu.",
+            impact: "",
+            next: "END_LATE_CUTS"
+        },        {
+            title: "Mapa Kompetencji 2.0: \"Kto się uczy?\"",
+            desc: "Rozbudowa mapy o nowy wymiar. Oprócz pokazywania, kto jest ekspertem, system pokazuje, kto jest \"uczniem\" w danej dziedzinie. System zachęca, aby w pierwszej kolejności kierować pytania do \"uczniów\", dając im szansę na rozwój, a eksperta włączać tylko w razie potrzeby.",
+            impact: "",
+            next: "END_LATE_CUTS"
+        },        {
+            title: "Grupowe Sesje Q&A",
+            desc: "Zamiast odpowiadać dziesiątki razy na te same pytania, ekspert organizuje regularne, otwarte sesje pytań i odpowiedzi na dany temat. Sesje są nagrywane i archiwizowane, tworząc bazę wiedzy i odciążając eksperta w przyszłości.",
+            impact: "",
+            next: "END_LATE_CUTS"
+        }
+    ]
+},
+B2E: {
+    title: "POZIOM 3: Po wprowadzeniu \"Odwrotnego Mentoringu\"",
+    description: `
+Program "Odwrotnego Mentoringu" przełamał bariery pokoleniowe. Seniorzy zaczęli eksperymentować z nowymi narzędziami, a juniorzy lepiej zrozumieli kontekst biznesowy. Jednak pojawił się subtelny problem: "frustracja braku autorytetu". Młodsi mentorzy, mimo formalnej roli, często nie mają faktycznego autorytetu, by "zmusić" swoich starszych podopiecznych do realnej zmiany nawyków. Sesje stają się miłą pogawędką, ale nie prowadzą do głębokiej transformacji. Seniorzy traktują je z przymrużeniem oka, a juniorzy boją się być zbyt nachalni.
+    `,
+    options: [
+        {
+            title: "Wspólne Projekty z Mierzalnym Celem",
+            desc: "Zastąpienie luźnych spotkań formalnymi, krótkimi projektami, które para \"mistrz-uczeń\" musi zrealizować. Cel musi być konkretny i wymagać użycia nowej technologii (np. \"W ciągu miesiąca musimy zautomatyzować raport X przy użyciu nowego narzędzia\").",
+            impact: "",
+            next: "END_LATE_CUTS"
+        },
+                {
+            title: "Ocena 360 Stopni dla Seniorów",
+            desc: "Włączenie opinii młodszego mentora do okresowej oceny pracowniczej seniora. Pytanie \"Czy i jak wdrożyłeś wiedzę zdobytą podczas sesji mentoringu odwrotnego?\" staje się formalnym elementem oceny, co zwiększa presję na realne działanie.",
+            impact: "",
+            next: "END_LATE_CUTS"
+        },        {
+            title: "Certyfikat Ucznia",
+            desc: "Zakończenie cyklu mentoringu odwrotnego nie jest automatyczne. Senior musi zdać praktyczny \"egzamin\" lub zaprezentować projekt, w którym wykorzystał nowe umiejętności, aby otrzymać formalny \"certyfikat\" i zakończyć program.",
+            impact: "",
+            next: "END_LATE_CUTS"
+        },        {
+            title: "Mentoring Grupowy zamiast Indywidualnego",
+            desc: "Zmiana formuły. Jeden junior zostaje mentorem dla małej grupy 3-4 seniorów. Tworzy to dynamikę grupową, element rywalizacji i wzajemnej motywacji wśród seniorów, a juniorowi daje silniejszą pozycję i większą pewność siebie.",
+            impact: "",
+            next: "END_LATE_CUTS"
+        }
+    ]
+},
+/* ===== ŚCIEŻKA C ===== */
+
+C1: {
+    title: "POZIOM 2: Strategia \"Dwóch Prędkości\" – Szok",
+    description: `
+Dział "Innowacji" stworzył rewolucyjny prototyp, ale jest on całkowicie niekompatybilny z systemami "Rdzenia". Co gorsza, dział "Rdzenia", pozbawiony wyzwań i perspektyw, doświadcza masowego spadku morale. Najlepsi specjaliści odchodzą, czując się jak pracownicy "muzeum technologii". 
+<br>
+<b>Firma ma innowacje, ale ryzykuje zapaść swojego głównego źródła przychodów.</b>
+    `,
+    options: [
+        {
+            title: "Powołanie \"Zespołów Pomostowych\" (Bridge Teams)",
+            desc: "Stworzenie mieszanych zespołów (z obu działów), których jedynym celem jest znalezienie sposobu na integrację nowego produktu ze starym systemem, np. poprzez budowę warstwy pośredniej (API)",
+            impact: "",
             next: "C2"
         },
         {
-            title: "Dalsza presja",
-            desc: "Maksymalizacja efektywności za wszelką cenę.",
-            impact: "Wypalenie i kolejne odejścia.",
+            title: "Strategia \"Wygaszania i Migracji\"",
+            desc: "Zamiast utrzymywać stary system w nieskończoność, zespół \"Rdzenia\" dostaje nowe, ambitne zadanie: zaplanowanie i wykonanie stopniowej migracji starych klientów na nową platformę. Daje im to cel i poczucie bycia częścią przyszłości.",
+            impact: "",
             next: "C2B"
+        },
+        {
+            title: "Wykup Menedżerski (Spin-off)",
+            desc: "Zaproponowanie kadrze zarządzającej \"Rdzenia\" przejęcia ich działu i stworzenia niezależnej firmy, która będzie świadczyć usługi utrzymania dla \"Expertis Systems\" na zasadach komercyjnych.",
+            impact: "",
+            next: "C2C"
+        },
+        {
+            title: "Re-integracja i \"Zapylenie Krzyżowe\"",
+            desc: "Rozwiązanie podziału i wymieszanie zespołów. Kluczowi innowatorzy są przenoszeni do starych zespołów, aby zaszczepić w nich nowe myślenie, a doświadczeni weterani dołączają do nowych projektów, aby zapewnić ich stabilność i skalowalność.",
+            impact: "",
+            next: "C2D"
         }
     ]
 },
 
 C2: {
-    title: "POZIOM 3: Firma po Restrukturyzacji",
+    title: "POZIOM 3:  Po powołaniu \"Zespołów Pomostowych\"",
     description: `
-Organizacja funkcjonuje, ale kultura strachu blokuje inicjatywę. Pracownicy wykonują tylko to, co niezbędne, unikając ryzyka.
-<br><br>
-Firma jest rentowna, lecz przestaje tworzyć nowe produkty. Innowacje zamierają.
+Zespoły pomostowe skutecznie połączyły stare i nowe systemy. Integracja działa, a klienci mogą korzystać z nowych funkcji bez utraty dostępu do starych. Jednak zespoły te stały się "superelitą" i wąskim gardłem. Każda zmiana w starym lub nowym systemie wymaga ich akceptacji i wsparcia. Zamiast rozprzestrzeniać wiedzę, zespoły pomostowe skumulowały ją u siebie, tworząc nowe, jeszcze groźniejsze "silosy wiedzy". Reszta organizacji czuje się bezradna bez nich.
     `,
     options: [
         {
-            title: "Zamrożona stabilność",
-            desc: "Firma trwa, ale się nie rozwija.",
-            impact: "Bezpieczne dziś, ryzykowne jutro.",
+            title: "Program \"Terminatorów\"",
+            desc: "Stopniowe rozwiązywanie zespołów pomostowych poprzez przesuwanie ich członków do regularnych zespołów produktowych. Każdy \"terminator\" ma za zadanie w ciągu 6 miesięcy przekazać swoją wiedzę nowemu zespołowi i uczynić go samowystarczalnym, po czym przechodzi do kolejnego.",
+            impact: "",
             next: "END_HARD"
         },
         {
-            title: "Próba odnowy kulturowej",
-            desc: "Inwestycja w odbudowę zaufania i kreatywności.",
-            impact: "Trudny proces, może być za późno.",
+            title: "Stworzenie \"Klonów\"",
+            desc: "Każdy członek zespołu pomostowego dostaje obowiązkowego \"ucznia\" lub \"cień\" z innego działu, który przez kilka miesięcy pracuje razem z nim. Celem jest stworzenie \"klona\" kompetencyjnego, co podwaja liczbę osób z krytyczną wiedzą i zmniejsza ryzyko.",
+            impact: "",
             next: "END_CULTURAL_RECOVERY"
+        },
+        {
+            title: "\"Tydzień Chaosu\"",
+            desc: " Zorganizowanie corocznego, kontrolowanego eksperymentu, podczas którego wszyscy członkowie zespołów pomostowych są wysyłani na obowiązkowy, tygodniowy urlop w tym samym czasie. Zmusza to resztę organizacji do samodzielnego radzenia sobie z problemami i ujawnia prawdziwe luki w dokumentacji i kompetencjach.",
+            impact: "",
+            next: "END_HARD"
         }
     ]
 },
-
 C2B: {
-    title: "POZIOM 3: Spirala Presji",
+    title: "POZIOM 3: Po wdrożeniu \"Strategii Wygaszania i Migracji\"",
     description: `
-Kolejne rundy optymalizacji i wymagań doprowadzają do masowego wypalenia. 40% pozostałych pracowników odchodzi w ciągu 6 miesięcy.
-<br><br>
-Firma zostaje ze szkieletem zespołu, który nie jest w stanie obsłużyć istniejących klientów.
+Zespół "Rdzenia" otrzymał misję migracji klientów na nową platformę. Dało im to nowy cel i poczucie wartości. Proces zaczął się obiecująco, ale po pewnym czasie ujawnił setki nieudokumentowanych funkcji i zależności w starym systemie. Migracja spowalnia, a klienci są sfrustrowani, ponieważ nowe systemy nie obsługują ich specyficznych, "plemiennych" procesów biznesowych, które przez lata były dostosowywane do ich potrzeb.
     `,
     options: [
         {
-            title: "Awaryjne zatrzymanie",
-            desc: "Drastyczne zwolnienie tempa i próba ratowania tego, co zostało.",
-            impact: "Firma balansuje na krawędzi przetrwania.",
+            title: "\"Archeologia Kodu\"",
+            desc: "Zatrudnienie wyspecjalizowanej firmy zewnętrznej, która zajmuje się inżynierią wsteczną (reverse engineering) starych systemów. Ich zadaniem jest analiza kodu i baz danych w celu odtworzenia utraconej logiki biznesowej i stworzenia kompletnej dokumentacji.",
+            impact: "",
+            next: "END_BURNOUT"
+        },
+                {
+            title: "\"Renegeocjacja Wartości\" z Klientami",
+            desc: "Zamiast próbować odtworzyć 100% starych funkcji, firma idzie do klientów z nową propozycją: \"Zrezygnujcie z tej starej, niestandardowej funkcji, a w zamian damy wam dużą zniżkę na nową platformę i pomożemy dostosować wasze procesy do nowoczesnych standardów\"",
+            impact: "",
+            next: "END_BURNOUT"
+        },
+        {
+            title: "Model \"Hybrydowy na Zawsze\"",
+            desc: "Akceptacja rzeczywistości, że pełna migracja nie jest możliwa. Zamiast tego firma buduje trwałą, stabilną warstwę integracyjną, która pozwala klientom używać obu systemów równolegle przez nieograniczony czas, a zespół \"Rdzenia\" staje się zespołem utrzymania tej warstwy.",
+            impact: "",
+            next: "END_BALANCED"
+        }
+    ]
+},
+C2C: {
+    title: "POZIOM 3: Po zrealizowaniu \"Wykupu Menedżerskiego\"",
+    description: `
+Wykup menedżerski (spin-off) działu utrzymania okazał się sukcesem finansowym i organizacyjnym. "Expertis Systems" ("New Co") może wreszcie skupić się na innowacjach, a nowa firma "Legacy Tech" ("Legacy Co") świetnie zarabia na utrzymaniu starych systemów. Jednak z czasem obie firmy zaczynają się od siebie oddalać. "New Co" traci kontakt z realnymi problemami klientów, a "Legacy Co" nie ma dostępu do nowych technologii. Pojawia się ryzyko, że za kilka lat "New Co" stworzy produkt, którego nikt nie będzie chciał, a "Legacy Co" zostanie z technologią, której nikt już nie potrafi rozwijać.
+    `,
+    options: [
+        {
+            title: "Powołanie Wspólnej \"Rady Technologicznej\"",
+            desc: "Stworzenie regularnie spotykającego się komitetu, złożonego z kluczowych architektów z obu firm. Ich zadaniem jest dbanie o długoterminową spójność technologiczną i planowanie przyszłej integracji, nawet jeśli firmy działają niezależnie.",
+            impact: "",
+            next: "END_QUALITY_DROP"
+        },
+                {
+            title: "Program \"Wymiany Pracowników\"",
+            desc: "Uruchomienie formalnego programu, w ramach którego pracownicy \"New Co\" mogą na kilka miesięcy przenieść się do \"Legacy Co\" (i na odwrót). Daje to innowatorom bezcenną wiedzę o potrzebach rynku, a weteranom kontakt z nowymi technologiami.",
+            impact: "",
+            next: "END_QUALITY_DROP"
+        },
+                {
+            title: "Wspólne Inwestycje w Badania i Rozwój",
+            desc: "Zamiast prowadzić dwa osobne działy R&D, firmy tworzą wspólne, trzecie przedsięwzięcie (joint venture), które finansują po połowie. Jego celem jest praca nad technologiami, które w przyszłości będą przydatne dla obu organizacji.",
+            impact: "",
+            next: "END_QUALITY_DROP"
+        }
+    ]
+},
+C2D: {
+    title: "POZIOM 3:Po \"Re-integracji i Zapyleniu Krzyżowym\"",
+    description: `
+Wymieszanie zespołów przyniosło ożywienie. Innowatorzy zaszczepili nowe pomysły w starych zespołach, a weterani ustabilizowali nowe projekty. Jednak ten "przymusowy sojusz" wywołał ogromne napięcia personalne. Powstały konflikty o styl pracy, narzędzia i priorytety. Zespoły są w stanie ciągłej, wewnętrznej walki, a menedżerowie spędzają większość czasu na gaszeniu pożarów i mediacji, zamiast na zarządzaniu projektami.
+<br>
+<b> Produktywność spada, a atmosfera w firmie staje się toksyczna.</b>
+    `,
+    options: [
+        {
+            title: "Wprowadzenie \"Facylitatorów Zespołowych\"",
+            desc: "Zatrudnienie profesjonalnych coachów lub facylitatorów, którzy regularnie pracują z zespołami, pomagając im nazwać i rozwiązać konflikty, ustalić wspólne zasady pracy i docenić różnorodność stylów myślenia.",
+            impact: "",
+            next: "END_BURNOUT"
+        },
+                {
+            title: "Model \"Zgody, a nie Konsensusu\"",
+            desc: "Wprowadzenie zasady, że decyzje techniczne nie muszą być podejmowane przez jednogłośny konsensus (co jest niemożliwe). Wystarczy \"zgoda\" (consent), co oznacza, że nikt w zespole nie ma fundamentalnego, merytorycznego sprzeciwu, który mógłby zniszczyć projekt. Pozwala to iść do przodu, nawet jeśli nie wszyscy są w 100% przekonani.",
+            impact: "",
+            next: "END_BURNOUT"
+        },
+                {
+            title: "\"Tłumacze\" jako formalna rola:",
+            desc: "Stworzenie w zespołach nowej, formalnej roli \"tłumacza\" lub \"mediatora\". To osoba (zazwyczaj o wysokich kompetencjach miękkich), której zadaniem jest dbanie o jakość komunikacji, wyjaśnianie perspektyw obu stron i zapobieganie eskalacji nieporozumień.",
+            impact:"",
             next: "END_BURNOUT"
         }
     ]
 },
+/* ===== ŚCIEŻKA D ===== */
+D1: {
+    title: "POZIOM 2: Strategia 'Otwartego Ekosystemu' – Pierwsze Efekty",
+    description: `
+Firma agresywnie otwiera się na zewnątrz: zatrudnia nowych specjalistów, nawiązuje współpracę z uniwersytetami i tworzy platformę do zbierania pomysłów od klientów. Po roku firma jest pełna świeżych idei. Jednak pojawia się głęboki konflikt kulturowy i "kryzys tożsamości". Wewnętrzni weterani czują się marginalizowani, a ich głęboka, kontekstowa wiedza jest ignorowana na rzecz "modnych nowinek". Nowi pracownicy frustrują się, napotykając opór "starej gwardii".
+ <br>
+ <b>Firma ma mnóstwo nowej wiedzy, ale nie potrafi jej zintegrować z istniejącym DNA organizacji.</b>
+    `,
+    options: [
+        {
+            title: "Powołanie \"Rady Integracji Wiedzy\"",
+            desc: "Stworzenie formalnego ciała, złożonego w proporcji 50/50 ze \"starej gwardii\" i \"nowych talentów\". Żadna nowa, duża inicjatywa technologiczna nie może zostać zatwierdzona bez zgody tej rady, co wymusza dialog i szukanie kompromisu.",
+            impact: "",
+            next: "D2"
+        },
+        {
+            title: "Wprowadzenie \"Piaskownicy Walidacyjnej\" (Validation Sandbox)",
+            desc: "Każdy nowy pomysł z zewnątrz, zanim zostanie wdrożony, musi przejść przez fazę eksperymentu w kontrolowanym środowisku. Zespołem walidującym kieruje doświadczony weteran, który ocenia pomysł pod kątem zgodności ze stabilnością i realiami biznesowymi firmy.",
+            impact: "",
+            next: "D2B"
+        },
+           {
+            title: "Stworzenie \"Wspólnego Wroga\"",
+            desc: "Skierowanie połączonych sił \"starych\" i \"nowych\" pracowników na bardzo ambitny projekt, który jest niemożliwy do zrealizowania przez każdą z grup osobno (np. stworzenie produktu łączącego stabilność starego systemu z innowacyjnością nowej technologii). Wspólny cel integruje lepiej niż jakiekolwiek warsztaty.",
+            impact: "",
+            next: "D2C"
+        },
+           {
+            title: "Formalizacja \"Dwóch Ścieżek Rozwoju\"",
+            desc: "Uznanie, że obie grupy mają różne, ale równie cenne kompetencje. Firma tworzy dwie równoległe, równie prestiżowe i dobrze płatne ścieżki kariery: Ścieżkę Ekspercką (dla pogłębiających wiedzę o rdzennych systemach) i Ścieżkę Innowatora (dla eksplorujących nowe terytoria), co zapobiega poczuciu, że jedna grupa jest \"lepsza\" od drugiej.",
+            impact: " ",
+            next: "D2D"
+        }
+    ]
+},
+D2: {
+    title: "POZIOM 3: Po powołaniu \"Rady Integracji Wiedzy\"",
+    description: `
+Rada, złożona po równo ze "starej gwardii" i "nowych talentów", skutecznie filtruje inicjatywy. Decyzje są bardziej przemyślane i zrównoważone. Jednak proces decyzyjny stał się ekstremalnie powolny i upolityczniony. Każda ze stron traktuje Radę jak pole bitwy, blokując nawzajem swoje pomysły, aby uzyskać przewagę w przyszłych negocjacjach. Zamiast podejmować odważne decyzje, Rada najczęściej wybiera "bezpieczny", nijaki kompromis. Firma unika błędów, ale traci dynamikę i zdolność do szybkiego reagowania na zmiany rynkowe.
 
+    `,
+    options: [
+        {
+            title: "Wprowadzenie \"Budżetu na Ryzyko\"",
+            desc: " Każda ze stron w Radzie otrzymuje roczny \"budżet na ryzyko\", który może samodzielnie wykorzystać na sfinansowanie jednego lub dwóch projektów, nawet jeśli druga strona się im sprzeciwia. Daje to obu grupom autonomię i pozwala na testowanie pomysłów bez konieczności uzyskania pełnego konsensusu.",
+            impact: "",
+            next: "END_LATE_CUTS"
+        },
+                {
+            title: "Zasada \"Disagree and Commit\" (Nie zgadzaj się i zaangażuj)",
+            desc: "Wprowadzenie twardej zasady, że po burzliwej dyskusji i podjęciu decyzji (nawet niewielką większością głosów), wszyscy członkowie Rady, łącznie z przegranymi, muszą publicznie i aktywnie wspierać wdrożenie tej decyzji. Sabotowanie lub podważanie jej jest niedopuszczalne.",
+            impact: "",
+            next: "END_LATE_CUTS"
+        },
+                {
+            title: "Kadencyjność i Rotacja Członków Rady",
+            desc: "Wprowadzenie zasady, że członkostwo w Radzie jest ograniczone czasowo (np. do 18 miesięcy). Zapobiega to tworzeniu się nieformalnych układów i zapewnia stały dopływ świeżej krwi i nowych perspektyw do procesu decyzyjnego.",
+            impact: "",
+            next: "END_LATE_CUTS"
+        },
+                {
+            title: "Powołanie zewnętrznego, neutralnego Arbitra",
+            desc: "Zatrudnienie szanowanego, zewnętrznego konsultanta lub mentora, który pełni rolę neutralnego przewodniczącego Rady. Nie ma on prawa głosu, ale jego zadaniem jest facylitowanie dyskusji, dbanie o jej merytoryczny poziom i pomoc w przełamywaniu impasów.",
+            impact: "",
+            next: "END_LATE_CUTS"
+        }
+    ]
+},
+D2B: {
+    title: "POZIOM 3: Po wprowadzeniu \"Piaskownicy Walidacyjnej\"",
+    description: `
+Piaskownica działa – nowe pomysły są bezpiecznie testowane, a weterani, kierujący walidacją, czują się docenieni. Jednak piaskownica stała się "cmentarzem innowacji". Proces walidacji jest tak rygorystyczny, a kryteria oceny tak mocno oparte na "starym" sposobie myślenia, że niemal żaden prawdziwie nowatorski pomysł nie jest w stanie go przejść. Zamiast filtrować, piaskownica skutecznie zabija każdą ideę, która jest zbyt odmienna od statusu quo. Innowatorzy są sfrustrowani i zdemotywowani.
+    `,
+    options: [
+        {
+            title: "Dwa Rodzaje Piaskownic",
+            desc: "Stworzenie dwóch oddzielnych środowisk testowych: \"Piaskownicy Optymalizacji\" (zarządzanej przez weteranów, do testowania ulepszeń istniejących systemów) oraz \"Piaskownicy Eksploracji\" (zarządzanej przez innowatorów, z luźniejszymi zasadami, do testowania radykalnie nowych koncepcji).",
+            impact: "",
+            next: "END_LATE_CUTS"
+        },
+                {
+            title: "Zmiana Kryteriów Oceny",
+            desc: "Zamiast oceniać nowe pomysły pod kątem zgodności ze starym systemem, ocenia się je na podstawie ich potencjału do otwarcia nowych rynków, pozyskania nowych klientów lub stworzenia nowych źródeł przychodów. Ocena jest oparta na potencjale przyszłości, a nie na zgodności z przeszłością.",
+            impact: "",
+            next: "END_LATE_CUTS"
+        },
+                {
+            title: "\"Adwokat Diabła\"",
+            desc: "Wprowadzenie do zespołu walidacyjnego formalnej roli \"adwokata diabła\", którą zawsze pełni jeden z innowatorów. Jego zadaniem jest aktywne kwestionowanie argumentów weteranów i obrona testowanego pomysłu, zapewniając, że nie zostanie on odrzucony zbyt pochopnie.",
+            impact: "",
+            next: "END_LATE_CUTS"
+        },
+                {
+            title: "Budżet na \"Uratowanie Pomysłu\"",
+            desc: "Dział, który zgłosił pomysł do piaskownicy, otrzymuje specjalny, niewielki budżet. Jeśli zespół walidacyjny odrzuci pomysł, jego autorzy mogą wykorzystać ten budżet, aby w ciągu np. miesiąca spróbować udowodnić jego wartość w jeszcze mniejszej, partyzanckiej skali.",
+            impact: "",
+            next: "END_LATE_CUTS"
+        }
+    ]
+},
+D2C: {
+    title: "POZIOM 3: Po stworzeniu \"Wspólnego Wroga\"",
+    description: `
+Wspólny, ambitny projekt zjednoczył zespoły i doprowadził do przełamania barier. Udało się stworzyć produkt, który łączy stabilność z innowacyjnością. Jednak po zakończeniu projektu i "pokonaniu wroga", stare podziały i animozje zaczynają wracać. Brakuje kolejnego, równie angażującego celu, a pracownicy naturalnie wracają do swoich stref komfortu i "plemion". Sukces był jednorazowy, a firma nie wie, jak utrzymać nowo zdobytą synergię w codziennej pracy.
+    `,
+    options: [
+        {
+            title: "Stworzenie \"Mapy Drogowej Wspólnych Wrogów\"",
+            desc: "Zamiast szukać celów ad hoc, zarząd we współpracy z zespołami tworzy długoterminową, ambitną mapę drogową kluczowych wyzwań rynkowych i technologicznych. Firma przechodzi od jednego \"wspólnego wroga\" do kolejnego w sposób zaplanowany, czyniąc z tego stały element kultury.",
+            impact: "",
+            next: "END_LATE_CUTS"
+        },
+                {
+            title: "Formalizacja Mieszanych Zespołów",
+            desc: "Przekształcenie tymczasowych, projektowych zespołów w stałe, interdyscyplinarne jednostki organizacyjne. \"Stara gwardia\" i \"nowe talenty\" nie są już oddzielnymi grupami, ale na stałe wymieszane w strukturze firmy.",
+            impact: "",
+            next: "END_LATE_CUTS"
+        },
+                {
+            title: "Program \"Bohaterów Integracji\"",
+            desc: "Stworzenie prestiżowego programu nagród, który nie celebruje indywidualnych osiągnięć technicznych, ale nagradza pracowników, którzy wykazali się wyjątkowymi zdolnościami do budowania mostów, rozwiązywania konfliktów i tworzenia synergii między różnymi grupami.",
+            impact: "",
+            next: "END_LATE_CUTS"
+        },
+                {
+            title: "Dokumentacja \"Zasad Angażowania\"",
+            desc: "Zespół, który pracował nad wspólnym projektem, ma za zadanie stworzyć dokument opisujący nie technologię, ale \"zasady gry\" – czyli procesy komunikacji, podejmowania decyzji i rozwiązywania konfliktów, które pozwoliły im odnieść sukces. Ten dokument staje się oficjalnym podręcznikiem współpracy w firmie.",
+            impact: "",
+            next: "END_LATE_CUTS"
+        }
+    ]
+},
+D2D: {
+    title: "POZIOM 3: Po formalizacji \"Dwóch Ścieżek Rozwoju\"",
+    description: `
+Dwie równoległe ścieżki kariery (Ekspert i Innowator) uspokoiły nastroje i zatrzymały odpływ talentów. Jednak z czasem doprowadziło to do powstania "kastycznej" struktury i wzajemnej ignorancji. "Eksperci" i "Innowatorzy" szanują się, ale nie współpracują, bo nie mają ku temu powodów. Komunikacja między nimi niemal zamarła. Firma działa sprawnie, ale straciła potencjał synergii, który mógłby wyniknąć z połączenia głębokiego doświadczenia z nowatorskimi pomysłami.
+    `,
+    options: [
+        {
+            title: "Wprowadzenie \"Projektów Dwukierunkowych\"",
+            desc: "Zdefiniowanie nowej kategorii projektów strategicznych, które mogą być zrealizowane tylko przy obowiązkowej, formalnej współpracy obu grup. Budżet projektu jest dzielony po równo, a sukces jest mierzony wspólnie.",
+            impact: "",
+            next: "END_LATE_CUTS"
+        },
+                {
+            title: "Stworzenie \"Wspólnej Rady Architektury\"",
+            desc: "Powołanie najwyższego organu technicznego w firmie, składającego się z najbardziej szanowanych przedstawicieli obu ścieżek. Rada ta musi zatwierdzać wszystkie kluczowe decyzje technologiczne w firmie, co wymusza dyskusję i konsensus.",
+            impact: "",
+            next: "END_LATE_CUTS"
+        },
+                {
+            title: "System \"Cieniowania\" (Shadowing):",
+            desc: "Wprowadzenie programu, w którym na okres np. jednego miesiąca \"Innowator\" musi pracować jako \"cień\" \"Eksperta\" (i vice versa), uczestnicząc we wszystkich spotkaniach i zadaniach. Celem jest wyłącznie zrozumienie perspektywy i wyzwań drugiej strony.",
+            impact: "",
+            next: "END_LATE_CUTS"
+        },
+                {
+            title: "Zmiana systemu premiowego",
+            desc: " Powiązanie części rocznej premii każdego pracownika nie tylko z wynikami jego własnej \"kasty\", ale również z wynikami i sukcesami drugiej grupy. Tworzy to finansową motywację do wzajemnego wspierania się i dbania o sukces całej organizacji.",
+            impact: "",
+            next: "END_LATE_CUTS"
+        }
+    ]
+},
 /* ===== ZAKOŃCZENIA ===== */
 
 END_SLOW: {
@@ -410,5 +952,4 @@ render("start");
 </script>
 
 </body>
-
 </html>
